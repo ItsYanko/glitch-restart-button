@@ -57,7 +57,7 @@
   const addButton = () => {
     el = document.createElement('button')
     el.innerHTML = 'Restart'
-    el.className += 'button-small btn-restart-fixed'
+    el.className += 'button-small btn-restart-fixed btn-restart'
     el.disabled = false
     el.onclick = () => reloadProject()
 
@@ -72,6 +72,12 @@
         z-index: 999;
         bottom: 12px;
         right: 12px;
+      }
+
+      .btn-restart{
+        background: #dcdcdc;
+        border: 0;
+        color: #000000;
       }
     `)
   })
